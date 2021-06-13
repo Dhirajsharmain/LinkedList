@@ -19,3 +19,8 @@ Description : Ability to create Linked List by appending 30 and 70 to 56
 - Next Append 30 to 56
 - Finally, Append 70 to 30
 - LinkedList Sequence: 56->30->70
+
+**UC4-InsertAtIndex**
+
+Description : Ability to insert 30 between 56 and 70
+- Final Sequence: 56->30->70

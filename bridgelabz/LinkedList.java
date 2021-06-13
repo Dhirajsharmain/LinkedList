@@ -46,4 +46,25 @@ public class LinkedList<T> {
         head = newNode;
     }
 
+    /**
+     * Method for Inserting the data at specific index of the list.
+     * @param index : position at which to be inserted
+     * @param data : data to be inserted
+     */
+    public void addAtIndex(int index, T data) {
+        Node<T> newNode = new Node<>();
+        newNode.data = data;
+
+        if (index == 0) {
+            addAtStart(data);
+        } else {
+            Node<T> node = head;
+            for (int i = 0; i < index - 1; i++) {
+                node = node.next;
+            }
+            newNode.next = node.next;
+            node.next = newNode;
+        }
+    }
+
 }
