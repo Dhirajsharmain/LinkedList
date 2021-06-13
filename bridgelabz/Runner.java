@@ -11,10 +11,10 @@ public class Runner {
         numberList.add(56);
         numberList.add(70);
         numberList.addAtIndex(1, 30);
-        System.out.println("Before Deleting First Element");
+        System.out.println("Before Deleting Last Element");
         numberList.show();
-        System.out.println("After Deleting First Element");
-        numberList.pop();
+        System.out.println("After Deleting Last Element");
+        numberList.popLast();
         numberList.show();
     }
 }

@@ -31,3 +31,10 @@ Description : Ability to delete the first element in the LinkedList of sequence 
 - Write pop method
 - Note there is new head
 - Final Sequence: 30->70
+
+**UC6-DeleteLastElement**
+
+Description : Ability to delete the last element in the LinkedList of sequence 56->30->70 
+- Write popLast method
+- Note there is new tail
+- Final Sequence: 56->30
