@@ -44,3 +44,11 @@ Description : Ability to delete the last element in the LinkedList of sequence 5
 Description : Ability to search LinkedList to find Node with value 30
 - Write Junit Test Case as demonstrated in class
 - Loop through LinkedList to find node with key 30
+
+**UC8-SearchByValueAndInsert**
+
+Description : Ability to insert 40 after 30 to the Linked List sequence of 56->30->70
+- Write Junit Test Case as demonstrated in class
+- Search LinkedList to get Node with key value 30
+- Then Insert 40 to 30
+- Final Sequence: 56->30->40->70
