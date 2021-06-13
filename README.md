@@ -38,3 +38,9 @@ Description : Ability to delete the last element in the LinkedList of sequence 5
 - Write popLast method
 - Note there is new tail
 - Final Sequence: 56->30
+
+**UC7-SearchByValue**
+
+Description : Ability to search LinkedList to find Node with value 30
+- Write Junit Test Case as demonstrated in class
+- Loop through LinkedList to find node with key 30
