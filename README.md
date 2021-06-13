@@ -24,3 +24,10 @@ Description : Ability to create Linked List by appending 30 and 70 to 56
 
 Description : Ability to insert 30 between 56 and 70
 - Final Sequence: 56->30->70
+
+**UC5-DeleteFirstElement**
+
+Description : Ability to delete the first element in the LinkedList of sequence 56->30->70 
+- Write pop method
+- Note there is new head
+- Final Sequence: 30->70
