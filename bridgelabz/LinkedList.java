@@ -125,4 +125,48 @@ public class LinkedList<T> {
         addAtIndex(index, InsertValue);
     }
 
+    /**
+     * Removes the element at the specified position in this list
+     *
+     * @param index
+     */
+    public void popAtIndex(int index) {
+        if (index == 0) {
+            pop();
+        } else {
+            Node<T> prevNode = head;
+            Node<T> currNode = head;
+            for (int i = 0; i < index; i++) {
+                prevNode = currNode;
+                currNode = currNode.next;
+            }
+            prevNode.next = currNode.next;
+        }
+    }
+
+    public void searchValueAndDelete (T searchValue){
+        int index = searchByValue(searchValue);
+        popAtIndex(index);
+    }
+
+    /**
+     * Returns the size of elements in this list.
+     *
+     * @return
+     */
+    public int size() {
+        Node<T> currNode = head;
+        int count = 0;
+        if (null != currNode) {
+            while ((null != currNode.next) || (null != currNode.data)) {
+                currNode = currNode.next;
+                count++;
+                if (null == currNode) {
+                    break;
+                }
+            }
+        }
+        return count;
+    }
+
 }
