@@ -155,16 +155,12 @@ public class LinkedList<T> {
      * @return
      */
     public int size() {
-        Node<T> currNode = head;
+        Node<T> temp = head;
         int count = 0;
-        if (null != currNode) {
-            while ((null != currNode.next) || (null != currNode.data)) {
-                currNode = currNode.next;
-                count++;
-                if (null == currNode) {
-                    break;
-                }
-            }
+        while (temp != null)
+        {
+            count++;
+            temp = temp.next;
         }
         return count;
     }
